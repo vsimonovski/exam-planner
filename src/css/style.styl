@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+
+.edit-wrap {
+    border: 5px solid black;
+    width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .formItemsDesc {
+        width: 200px;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        display: inline-block;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+    }
+    .formItemsField {
+        width: 250px;
+        font-size: 1.2rem;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+        display: inline-block;
+        padding: 0px 5px 0px;
+        outline: none;
+    }
+    .formBtnAdd {
+        width: 200px;
+        text-transform: uppercase;
+        height: 50px;
+        margin: 0 auto;
+        display: block;
+        border: 0px;
+        background: #1abc9c;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
+
+.list-of-courses {
+    list-style-type: none;
+    width: 559px;
+    margin: 0 auto;
+    padding-left: 0px;
+    .single-course {
+        display: inline-block;
+        position: relative;
+        width: 23%;
+        border: 8px solid black;
+        background: #3498db;
+        padding-left: 15px;
+        margin-right: 10px;
+        margin-top: 20px;
+        .removeBtn {
+            top: 0px;
+            right: 0px;
+            border: 0px;
+            background: transparent;
+            color: black;
+            font-weight: bold;
+            font-size: 1.4rem;
+            position: absolute;
+        }
+    }
+}
