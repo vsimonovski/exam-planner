@@ -17,11 +17,16 @@ h6 {
 h1 {
   font-size: 3rem;
 }
+.app-wrap {
+  margin: 0 auto;
+  width: 1139px;
+  padding-top: 65px;
+}
 .edit-wrap {
   border: 5px solid #000;
   width: 500px;
-  margin: 0 auto;
   padding: 25px;
+  float: left;
 }
 .edit-wrap__title {
   margin-bottom: 30px;
@@ -60,19 +65,15 @@ h1 {
 }
 .list-of-courses {
   list-style-type: none;
-  width: 559px;
-  margin: 0 auto;
+  width: 200px;
   padding-left: 0px;
 }
 .list-of-courses .single-course {
-  display: inline-block;
   position: relative;
-  width: 23%;
-  border: 8px solid #000;
-  background: #3498db;
-  padding-left: 15px;
-  margin-right: 10px;
-  margin-top: 20px;
+  margin-top: 15px;
+  border-bottom: 2px solid #d3d3d3;
+  width: 485px;
+  line-height: 2rem;
 }
 .list-of-courses .single-course .removeBtn {
   top: 0px;
@@ -83,4 +84,18 @@ h1 {
   font-weight: bold;
   font-size: 1.4rem;
   position: absolute;
+}
+.course-wrap {
+  padding-left: 55px;
+  width: 500px;
+  float: left;
+  border: 5px solid #000;
+  margin-left: 20px;
+  padding: 25px;
+  height: 314px;
+  overflow-y: scroll;
+}
+.course-wrap__title {
+  margin-bottom: 30px;
+  text-align: center;
 }

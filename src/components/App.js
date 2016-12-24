@@ -40,10 +40,13 @@ class App extends React.Component {
         return (
             <div className="app-wrap">
                 <Edit addCourse={this.addCourse}/>
-                <View 
-                    course={this.state.courses}
-                    removeCourse={this.removeCourse}
-                />
+                <div className="course-wrap">
+                    <h1 className="course-wrap__title">Courses: </h1>
+                    <View 
+                        course={this.state.courses}
+                        removeCourse={this.removeCourse}
+                    />
+                </div>
             </div>
         )
     }

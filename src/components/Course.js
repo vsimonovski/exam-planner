@@ -6,9 +6,12 @@ class Course extends React.Component {
         
         return(
             <li className="single-course">
-                <p>{details.name}</p>
-                <p>{details.month}</p>
-                <p>{details.date}</p>
+                <span className="course-wrap__title">Name: </span> {details.name}
+                <br/>
+                <span className="course-wrap__title">Date: </span>{details.month}
+                <br/>
+                <span className="course-wrap__title">Month: </span>{details.date}
+                <br/>
                 <button className="removeBtn" onClick={() => this.props.removeCourse(this.props.index)}>&times;</button>
             </li>
         )

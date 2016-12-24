@@ -15,13 +15,13 @@ class CourseForm extends React.Component {
         return (
             <form ref={(input) => this.courseForm = input} onSubmit={(e) => this.createCourse(e)}>
                 <span className="formItemsDesc">Course name:</span>
-                <input  className="formItemsField" ref={(input) => this.course_name = input } type="text" />
+                <input required className="formItemsField" ref={(input) => this.course_name = input } type="text" />
                 <br/>
-                <span className="formItemsDesc">Date of exam:</span>
+                <span required className="formItemsDesc">Date of exam:</span>
                 <input className="formItemsField" ref={(input) => this.course_date = input } type="text" />
                 <br/>
                 <span className="formItemsDesc">Month of exam:</span>
-                <input className="formItemsField" ref={(input) => this.course_month = input } type="text" />
+                <input required className="formItemsField" ref={(input) => this.course_month = input } type="text" />
                 <button className="formBtnAdd" type="submit">Add</button>
             </form>
         )
