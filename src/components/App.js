@@ -30,6 +30,13 @@ class App extends React.Component {
         this.setState({courses});
     }
 
+    updateCourse = ( key, updatedCourse ) => {
+        const courses = { ...this.state.courses };
+        courses[key] = updatedCourse;
+//        console.log(courses);
+        this.setState({ courses });
+    } 
+
     removeCourse = ( key ) => {
         const courses = { ...this.state.courses };
         courses[key] = null;
@@ -45,6 +52,7 @@ class App extends React.Component {
                     <View 
                         course={this.state.courses}
                         removeCourse={this.removeCourse}
+                        updateCourse={this.updateCourse}
                     />
                 </div>
             </div>

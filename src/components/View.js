@@ -11,7 +11,7 @@ class View extends React.Component {
                     {
                         Object
                         .keys(this.props.course)
-                        .map(key => <Course removeCourse={this.props.removeCourse} key={key} index={key} details={this.props.course[key]}/>)
+                        .map(key => <Course rend={this.render} courses={this.props.course} updateCourse={this.props.updateCourse} removeCourse={this.props.removeCourse} key={key} index={key} details={this.props.course[key]}/>)
                     }
                 </ul>
             </div>
