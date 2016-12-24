@@ -48,7 +48,7 @@ class App extends React.Component {
             <div className="app-wrap">
                 <Edit addCourse={this.addCourse}/>
                 <div className="course-wrap">
-                    <h1 className="course-wrap__title">Courses: </h1>
+                    <h1 className="course-wrap__title--main">Courses: </h1>
                     <View 
                         course={this.state.courses}
                         removeCourse={this.removeCourse}

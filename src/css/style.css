@@ -19,7 +19,7 @@ h1 {
 }
 .app-wrap {
   margin: 0 auto;
-  width: 1139px;
+  width: 1140px;
   padding-top: 65px;
 }
 .edit-wrap {
@@ -95,7 +95,18 @@ h1 {
   height: 314px;
   overflow-y: scroll;
 }
-.course-wrap__title {
+.course-wrap__title--main {
   margin-bottom: 30px;
   text-align: center;
+}
+.course-wrap__title {
+  display: inline-block;
+  width: 90px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.course-wrap input {
+  border: 0px;
+  outline: none;
+  font-size: 18px;
 }

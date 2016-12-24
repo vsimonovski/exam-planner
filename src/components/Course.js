@@ -19,10 +19,10 @@ class Course extends React.Component {
                 <span className="course-wrap__title">Name: </span> 
                 <input name="name" type="text" value={details.name} onChange={(e) => this.handleChange(e, this.props.index)} /> 
                 <br/>
-                <span className="course-wrap__title">Date: </span>
+                <span className="course-wrap__title">Month: </span>
                 <input name="month" type="text" value={details.month} onChange={(e) => this.handleChange(e, this.props.index)} />                
                 <br/>
-                <span className="course-wrap__title">Month: </span>
+                <span className="course-wrap__title">Date: </span>
                 <input name="date" type="text" value={details.date} onChange={(e) => this.handleChange(e, this.props.index)} />
                 <br/>
                 <button className="removeBtn" onClick={() => this.props.removeCourse(this.props.index)}>&times;</button>
